@@ -12,6 +12,15 @@ For an existing HTML file with print styling in place, start at Export and verif
 3. Compose the HTML by hand. Place the content and figures deliberately in page and column blocks. Embed image bytes in data URLs and keep print CSS inline so the HTML opens offline. For formulas, use static MathML or another fully rendered offline representation. When the user wants the full note in the PDF, carry across every paragraph, formula, and figure.
 4. Print with the bundled [Chrome exporter](scripts/html-to-pdf.py). Inspect the resulting PDF and revise the HTML to meet the page target.
 
+## Exam cheatsheet defaults
+
+Use these defaults for exam cheatsheets and follow any format the user specifies.
+
+- Fit the handout within two portrait A4 pages. Preserve the requested text, formulas, and figures when reflowing the layout.
+- Omit the visible document title, running headers, section headings, and hyperlinks. Use short inline bold terms, spacing, or rules to separate topics. Keep useful figure labels and captions.
+- Place each figure beside its explanation and embed it in the HTML as a data URL. Use compact insets for simple diagrams when the layout is tight.
+- Adjust the HTML and reprint if content overflows. Inspect the final PDF for page count, A4 size, legibility, and hyperlink annotations. The exporter remains a Chrome print command.
+
 ## Fit the page
 
 Set the paper size and margins in CSS. For a tightly packed two-page portrait sheet, start with two columns per page, 8–10 mm margins, and body type around 9–10 pt. Adjust for the content and print legibility. Explicit page breaks make the page assignment predictable.

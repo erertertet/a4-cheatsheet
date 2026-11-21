@@ -35,6 +35,14 @@ Type `$a4-cheatsheet` in Codex and describe what you want. If the skill does not
 $a4-cheatsheet Turn notes.md into a two-page A4 PDF with embedded figures beside the relevant text.
 ```
 
+## Exam cheatsheet defaults
+
+- Use at most two portrait A4 pages.
+- Omit the visible title, running headers, section headings, and hyperlinks from the handout.
+- Embed figures beside the text they explain, and keep the requested text and formulas when reflowing the page.
+
+See the [exam cheatsheet workflow](SKILL.md#exam-cheatsheet-defaults) for layout and PDF checks.
+
 ## Export an existing HTML file
 
 From the cloned repository, pass the paths to your HTML and PDF files. Use `python3` if that is your Python command. The HTML controls paper size and pagination.
